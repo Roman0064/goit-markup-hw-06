@@ -340,16 +340,22 @@
                         id="policy"
                         type="checkbox"
                         value="true"
+                        required
                     />
-                    <label class="check-text" for="policy">Політика користування
-                        <span>
-                            <svg class="check-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-default"></use>
+                    <label class="check-text" for="policy">
+                        <span class="check-click">
+                            <svg class="click-icon" width="10" height="8">
+                                <use href="/images/icons.svg#icon-click"></use>
                             </svg>
                         </span>
+                        <p>I accept the terms and conditions of the&nbsp;
+                            <a class="link policy-link" href="#">Privacy Policy</a>
+                        </p>
                     </label>
                 </div>
-                <button class="modal-send" type="submit"><p class="text-modal-button">Send</p></button>
+                <div class="button-modal-pos">
+                    <button class="modal-send" type="submit"><p class="text-modal-button">Send</p></button>
+                </div>
             </form>
         </div>
     </div>
@@ -392,12 +398,15 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="online-footer">
             <form class="online-form">
-                <label for="online-text">Subscribe</label>
+                <label class="label-footer-text" for="online-text">Subscribe</label>
                 <input type="email" class="online-email" id="online-text" placeholder="E-mail">
-                <button type="submit">Subscribe</button>
+                <button type="submit" class="footer-button-form">
+                    <p class="fot-text-form">Subscribe</p>
+                    <svg class="footer-icon-telegram" width="24" height="20">
+                        <use href="./images/icons.svg#icon-telegram"></use>
+                    </svg>
+                </button>
             </form>
         </div>
     </footer>
